@@ -44,22 +44,31 @@ const ratio = {
   },
 };
 
+arabic = {
+  EGP: "جنية مصرى",
+  USD: "دولار امريكى",
+  SAR: "ريال سعودى",
+  JPY: "ين يابانى",
+  KWD: "دينار كويتى",
+  AED: "درهم اماراتى",
+};
 function convertCurrency() {
   var amount = parseFloat(document.getElementById("amount").value);
   var from = document.getElementById("from").value;
   var to = document.getElementById("to").value;
 
   if (amount <= 0 || !amount) {
-    alert("PLease Enter a valid number ...");
+    alert("يرجى ادخال قيمه صالحه ...");
     return;
   }
 
   if (from === to) {
     var convertedAmount = amount;
   } else {
-    var convertedAmount = amount * ratio[from][to];
+    var convertedAmount = (amount * ratio[from][to]).toFixed(4);
   }
-
+  fromArabic = arabic[from];
+  toArabic = arabic[to];
   result = document.getElementById("result");
-  result.innerText = `${amount} ${from} => ${convertedAmount} ${to}`;
+  result.innerText = `${amount} ${fromArabic} => ${convertedAmount} ${toArabic}`;
 }

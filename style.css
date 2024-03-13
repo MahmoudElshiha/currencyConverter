@@ -1,3 +1,6 @@
+* {
+  direction: rtl;
+}
 body {
   background-color: #002764;
 }
@@ -32,7 +35,6 @@ body {
 label {
   display: block;
   font-weight: 600;
-  direction: rtl;
 }
 input {
   font-weight: 400;

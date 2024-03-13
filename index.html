@@ -21,26 +21,28 @@
                 <h1>تحويل العملة</h1>
             </div>
             <label for="amount">الكميه : </label>
-            <input type="number" name="amount" id="amount" placeholder="000">
+            <input type="number" name="amount" id="amount" placeholder="---">
             <div class="pair">
+
+
                 <select name="from" id="from">
-                    <option value="EGP"> جنية مصرى </option>
-                    <option value="USD"> دولار امريكى </option>
-                    <option value="SAR"> ريال سعودى </option>
-                    <option value="JPY"> ين يابانى </option>
-                    <option value="KWD"> دينار كويتى </option>
-                    <option value="AED"> درهم اماراتى </option>
+                    <option value="EGP" selected> من : جنية مصرى </option>
+                    <option value="USD"> من : دولار امريكى </option>
+                    <option value="SAR"> من : ريال سعودى </option>
+                    <option value="JPY"> من : ين يابانى </option>
+                    <option value="KWD"> من : دينار كويتى </option>
+                    <option value="AED"> من : درهم اماراتى </option>
                 </select>
 
                 <select name="to" id="to">
-                    <option value="EGP"> جنية مصرى </option>
-                    <option value="USD"> دولار امريكى </option>
-                    <option value="SAR"> ريال سعودى </option>
-                    <option value="JPY"> ين يابانى </option>
-                    <option value="KWD"> دينار كويتى </option>
-                    <option value="AED"> درهم اماراتى </option>
-
+                    <option value="EGP"> الى : جنية مصرى </option>
+                    <option value="USD" selected> الى : دولار امريكى </option>
+                    <option value="SAR"> الى : ريال سعودى </option>
+                    <option value="JPY"> الى : ين يابانى </option>
+                    <option value="KWD"> الى : دينار كويتى </option>
+                    <option value="AED"> الى : درهم اماراتى </option>
                 </select>
+
             </div>
             <button type="button" onclick="convertCurrency()"> تحويل </button>
             <div class="result" id="result">
