@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>تجويل العمله </title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calc">
+            <div class="header">
+                <img src="money.jpg" alt="money" width="100px">
+                <h1>تحويل العملة</h1>
+            </div>
+            <label for="amount">الكميه : </label>
+            <input type="number" name="amount" id="amount" placeholder="000">
+            <div class="pair">
+                <select name="from" id="from">
+                    <option value="EGP"> جنية مصرى </option>
+                    <option value="USD"> دولار امريكى </option>
+                    <option value="SAR"> ريال سعودى </option>
+                    <option value="JPY"> ين يابانى </option>
+                    <option value="KWD"> دينار كويتى </option>
+                    <option value="AED"> درهم اماراتى </option>
+                </select>
+
+                <select name="to" id="to">
+                    <option value="EGP"> جنية مصرى </option>
+                    <option value="USD"> دولار امريكى </option>
+                    <option value="SAR"> ريال سعودى </option>
+                    <option value="JPY"> ين يابانى </option>
+                    <option value="KWD"> دينار كويتى </option>
+                    <option value="AED"> درهم اماراتى </option>
+
+                </select>
+            </div>
+            <button type="button" onclick="convertCurrency()"> تحويل </button>
+            <div class="result" id="result">
+                <p> --- محمود مصطفى الشيحه --- </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
